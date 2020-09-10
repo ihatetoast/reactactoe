@@ -5,20 +5,24 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
+import LandingPage from './components/LandingPage'
 import Game from './components/Game'
-import logo from './logo.svg';
+import gamelogoI from './gameboard-i.svg';
+import gamelogoA from './gameboard-a.svg';
+import gamelogoO from './gameboard-o.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h1>T<img src={gamelogoI} className="App-logo" alt="tictactoe board" />cT<img src={gamelogoA} className="App-logo" alt="tictactoe board" />cT<img src={gamelogoO} className="App-logo" alt="tictactoe board" />e</h1>
+
       </header>
       <Router>
         <Switch>
           <Route exact path="/">
-            {/* scoreboard */}
+            <LandingPage />
           </Route>
           <Route exact path="/game">
             <Game />

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Link } from 'react-dom'
-import {Storage} from './../storage/storage'
-import Square from './Square'
+// import {Storage} from './../storage/storage'
+// import Square from './Square'
 
 import * as helpers from '../utils/helperFcns'
 // https://blog.alexdevero.com/how-to-build-simple-tic-tac-toe-game-with-react/÷
@@ -19,7 +19,7 @@ export default class Game extends Component {
     render() {
         return (
             <div>
-                
+               I am the game div
             </div>
         )
     }
