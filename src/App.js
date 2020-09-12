@@ -16,8 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>T<img src={gamelogoI} className="App-logo" alt="tictactoe board" />cT<img src={gamelogoA} className="App-logo" alt="tictactoe board" />cT<img src={gamelogoO} className="App-logo" alt="tictactoe board" />e</h1>
-
+        <h1>T<img src={gamelogoI} className="App-logo" alt="tictactoe board" />cT<img src={gamelogoA} className="App-logo" alt="tictactoe board" />cT<img src={gamelogoO} className="App-logo" alt="tictactoe board" />e</h1>
       </header>
       <Router>
         <Switch>

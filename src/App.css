@@ -17,16 +17,18 @@
 }
 
 .App-header {
+  align-items: center;
   background-color: #d9c704;
-  min-height: 5vh;
+  color: #044fd9;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #044fd9;
+  justify-content: center;
+  min-height: 5vh;
 }
-
+.App-header h1{
+  margin: 0.25em auto;
+}
 .App-link {
   color: #61dafb;
 }

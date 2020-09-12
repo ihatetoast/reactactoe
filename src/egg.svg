@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="40px" viewBox="0 0 29 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval</title>
+    <defs>
+        <linearGradient x1="33.5364491%" y1="62.6660156%" x2="81.5717098%" y2="44.3286133%" id="linearGradient-1">
+            <stop stop-color="#EE9242" stop-opacity="0.81211757" offset="0%"></stop>
+            <stop stop-color="#D8BFAA" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="65.4760742%" fx="50%" fy="65.4760742%" r="93.3758828%" gradientTransform="translate(0.500000,0.654761),scale(1.000000,0.701210),rotate(-90.000000),translate(-0.500000,-0.654761)" id="radialGradient-2">
+            <stop stop-color="#DBAC83" offset="0%"></stop>
+            <stop stop-color="#D2B697" stop-opacity="0.5" offset="100%"></stop>
+        </radialGradient>
+        <path d="M21,42 C30,42 37,33 34,22 C31,11 27,2 21,2 C15,2 9,11 7,22 C5,33 12,42 21,42 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval" transform="translate(-6.000000, -2.000000)">
+            <use fill="#DBAC83" xlink:href="#path-3"></use>
+            <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+            <use fill="url(#radialGradient-2)" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>
