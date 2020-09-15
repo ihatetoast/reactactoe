@@ -12,7 +12,7 @@ const StyledButton = styled.button`
 const Square = (props) =>{
     
     return(
-        <StyledButton className="game-square" onClick={props.handleClick}>{props.val} </StyledButton>
+        <StyledButton className="game-square" onClick={props.onClick}>{props.val} </StyledButton>
     )
 };
 
