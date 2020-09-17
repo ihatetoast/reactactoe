@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component }  from 'react'
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
@@ -9,11 +9,16 @@ const StyledButton = styled.button`
         margin: 1em;
         width:12em;
         `
-const Square = (props) =>{
-    
-    return(
-        <StyledButton className="game-square" onClick={props.onClick}>{props.val} </StyledButton>
-    )
-};
 
+
+function Square() {
+
+
+        return(
+            <StyledButton 
+            className="game-square" 
+            onClick={this.props.onClick()}>{this.props.value} </StyledButton>
+        )
+    
+}
 export default Square;
