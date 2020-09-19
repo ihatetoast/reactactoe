@@ -1,4 +1,4 @@
-import React, { Component }  from 'react'
+import React  from 'react'
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
@@ -8,16 +8,16 @@ const StyledButton = styled.button`
         height:12em;
         margin: 1em;
         width:12em;
+        line-height: 34px;
         `
 
 
-function Square() {
+function Square(props) {
 
 
         return(
             <StyledButton 
-            className="game-square" 
-            onClick={this.props.onClick()}>{this.props.value} </StyledButton>
+            className="game-square" onClick={props.onClick}>{props.value}</StyledButton>
         )
     
 }
