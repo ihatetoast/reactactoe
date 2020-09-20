@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Square from './Square'
-
+import {checkWinner} from '../utils/helperFcns'
 const StyledTitle = styled.h2`
     margin:0;
 `
@@ -14,14 +14,13 @@ class Board extends Component {
         }
     }
     handleClick(idx){
-        console.log(`I clicked ${idx}`);
         const squaresCopy = [...this.state.squares];
         squaresCopy[idx]= this.state.isXNext ? "X" : "O";
         this.setState({
             squares: squaresCopy,
             isXNext: !this.state.isXNext
         });
-        console.log(this.state.isXNext)
+        checkWinner(this.state.squares);
     }
     renderSquare(idx){
         return <Square 
