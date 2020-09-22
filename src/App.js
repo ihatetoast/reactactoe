@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
 import LandingPage from './components/LandingPage'
 import Game from './components/Game'
-import gamelogoI from './gameboard-i.svg';
-import gamelogoA from './gameboard-a.svg';
-import gamelogoO from './gameboard-o.svg';
+import gamelogoI from './images/gameboard-i.svg';
+import gamelogoA from './images/gameboard-a.svg';
+import gamelogoO from './images/gameboard-o.svg';
 import './App.css';
 
 function App() {

@@ -2,20 +2,20 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Square from './Square'
 import * as utils from '../utils/helperFcns'
+
 const StyledStatus = styled.p`
 `;
 const StyledBoard = styled.div`
-background-image:url('../tictactoeBoard_sm.svg');
-    ${'' /* background: rebeccapurple; */}
     display:inline-flex;
     flex-direction:column;
     flex:1;
     align-items: center;
     justify-content: center;
-    
+    background-image:url('./../images/tictactoeBoard_lg.svg');
+    background-repeat:no-repeat;
+    background-size: cover;
 `;
 const StyledRow = styled.div`
-
     display:flex;
     align-items: center;
     justify-content: center;
@@ -64,8 +64,10 @@ class Board extends Component {
                 <div>
                   <StyledStatus>{status}</StyledStatus>  
                 </div>
-                <StyledBoard>
-                    <StyledRow>
+                <StyledBoard style={{
+                    backgroundImage: 'url(' + require('./../images/tictactoeBoard_lg.svg') + ')',
+                         }}>
+                     <StyledRow>
                             {this.renderSquare(0)}
                             {this.renderSquare(1)}
                             {this.renderSquare(2)}
@@ -79,7 +81,7 @@ class Board extends Component {
                             {this.renderSquare(6)}
                             {this.renderSquare(7)}
                             {this.renderSquare(8)}
-                        </StyledRow>  
+                        </StyledRow>
                 </StyledBoard>
             </div>
         )
