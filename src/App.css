@@ -1,6 +1,11 @@
 /* d90429 red */
 /* 044fd9 blue*/
 /* d9c704 yel */
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }

@@ -2,8 +2,7 @@ import React, {Component, Fragment} from 'react'
 // import { Link } from 'react-dom'
 // import {Storage} from './../storage/storage'
 import Board from './Board'
-// import styled from 'styled-components'
-// import * as helpers from '../utils/helperFcns'
+
 // https://blog.alexdevero.com/how-to-build-simple-tic-tac-toe-game-with-react/
 
 // https://github.com/kelanwu/react-tic-tac-toe/blob/master/src/index.js
