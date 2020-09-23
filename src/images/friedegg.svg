@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Artboard</title>
+    <title>eggX</title>
     <defs>
         <radialGradient cx="46.9586488%" cy="50%" fx="46.9586488%" fy="50%" r="77.8138937%" gradientTransform="translate(0.469586,0.500000),scale(0.984456,1.000000),rotate(90.000000),translate(-0.469586,-0.500000)" id="radialGradient-1">
             <stop stop-color="#F2F1EB" stop-opacity="0.5" offset="0%"></stop>
             <stop stop-color="#EFEDDA" stop-opacity="0.5" offset="100%"></stop>
         </radialGradient>
         <path d="M97.818588,14.8280317 C67.9480682,19.7414818 34.4673105,-6.41657682 14.949481,14.8280317 C5.05879656,25.5937636 -0.48696441,42.0148609 6.55767274,55.3983252 C13.4146039,68.425184 30.6841216,68.2099968 30.6841216,94.9009794 C30.6841216,108.003284 12.4834619,116.888101 6.55767274,127.997798 C-2.82625964,145.590837 -1.52120715,163.921987 6.55767274,177.109206 C19.738224,198.623922 48.9938085,192.056156 70.5452111,192.056156 C92.0966136,192.056156 87.3288277,165.365173 110.4063,165.365173 C133.483773,165.365173 145.02251,192.056156 179.638719,177.109206 C214.254928,162.162255 171.151699,119.222508 167.051007,97.036258 C165.190456,86.969995 179.598861,72.5979996 184.883599,55.3983252 C191.246532,34.6895637 188.305767,11.3761007 179.638719,6.28691725 C163.773249,-3.02909067 127.689108,9.91458152 97.818588,14.8280317 Z" id="path-2"></path>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="58.8734568%" gradientTransform="translate(0.500000,0.500000),scale(1.000000,0.975904),translate(-0.500000,-0.500000)" id="radialGradient-3">
+            <stop stop-color="#FF7303" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FAEEE2" stop-opacity="0.5" offset="100%"></stop>
+        </radialGradient>
+        <ellipse id="path-4" cx="96.5" cy="98.5" rx="40.5" ry="41.5"></ellipse>
     </defs>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="eggX" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Path">
             <use fill="#FDFBF8" xlink:href="#path-2"></use>
             <use fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
         </g>
-        <ellipse id="Oval" fill="#DFCB74" cx="96.5" cy="98.5" rx="40.5" ry="41.5"></ellipse>
+        <g id="Oval">
+            <use fill="#DFCB74" xlink:href="#path-4"></use>
+            <use fill="url(#radialGradient-3)" xlink:href="#path-4"></use>
+        </g>
     </g>
 </svg>

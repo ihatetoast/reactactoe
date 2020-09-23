@@ -1,5 +1,6 @@
 {
   "name": "reacttactoe",
+  "homepage": "https://github.com/ihatetoast/reactactoe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
