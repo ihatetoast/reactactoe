@@ -11,7 +11,9 @@ const StyledBoard = styled.div`
     flex:1;
     align-items: center;
     justify-content: center;
+    
     background-image:url('./../images/tictactoeBoard_lg.svg');
+    background-color: #044fd9;
     background-repeat:no-repeat;
     background-size: cover;
 `;
@@ -44,9 +46,17 @@ class Board extends Component {
         });
     }
     renderSquare(idx){
+        console.log(this.state.squares[idx])
+        let bgImg;
+        if(this.state.squares[idx]){
+             bgImg = this.state.isXNext === "X" ? "eggO" : "eggX";
+        } else{
+             bgImg =''
+        }
         return <Square 
             value={this.state.squares[idx]}
             onClick={()=>this.handleClick(idx)}
+            bg={bgImg}
              />
     }
     render() {
