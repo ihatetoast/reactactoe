@@ -4,6 +4,9 @@ import Square from './Square'
 import * as utils from '../utils/helperFcns'
 
 const StyledStatus = styled.p`
+    margin: 0.3em;
+    font-size: 1.5em;
+    letter-spacing: 3px;
 `;
 const StyledBoard = styled.div`
     display:inline-flex;
@@ -11,7 +14,6 @@ const StyledBoard = styled.div`
     flex:1;
     align-items: center;
     justify-content: center;
-    
     background-image:url('./../images/tictactoeBoard_lg.svg');
     background-color: #044fd9;
     background-repeat:no-repeat;

@@ -29,10 +29,9 @@
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   justify-content: center;
-  min-height: 5vh;
 }
 .App-header h1{
-  margin: 0.25em auto;
+  margin: 0.15em auto;
 }
 .App-link {
   color: #61dafb;

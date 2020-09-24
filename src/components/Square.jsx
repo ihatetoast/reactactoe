@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import eggO from '../images/egg.png'
 import eggX from '../images/friedegg.png'
 
-const StyledButton = styled.button`
+const StyledButton = styled.div`
     background-color: transparent;
     background-size: contain;
     height: 12em;
