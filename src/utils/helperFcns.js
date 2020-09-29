@@ -17,7 +17,6 @@ export function checkWinner(arr){
         if(arr[a] && arr[a]===arr[b] && arr[a]===arr[c]){
             //return if the winner is X or O (the one in a)
             return arr[a];
-            console.log(`The winner is ${arr[a]}`);
         }
     }
     return null;

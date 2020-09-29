@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import Square from './Square'
 import * as utils from '../utils/helperFcns'
+import {Storage} from './../storage/storage'
 
 const StyledStatus = styled.p`
     margin: 0.3em;
@@ -27,15 +29,17 @@ const StyledRow = styled.div`
 `;
 class Board extends Component {
     constructor(props){
-        super(props);
+        super();
         this.state ={
             squares: Array(9).fill(null),
+            history:[],
             isXNext: true
         }
+        
     }
     handleClick(idx){
         // copy squares arr
-        const squaresCopy = [...this.state.squares];
+        const squaresCopy = this.state.squares.slice();
         // check for winner or that the square has already been clicked:
         if(utils.checkWinner(squaresCopy) || squaresCopy[idx]){
             return;
