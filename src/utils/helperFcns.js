@@ -21,3 +21,17 @@ export function checkWinner(arr){
     }
     return null;
 }
+export function checkBoard(arr){
+    let count = 0;
+    arr.forEach(el=>{
+        if(el !== null){
+            count ++;
+        }
+    });
+    if (count === 9){
+        return true;
+    } else {
+        return false;
+    }
+    
+}

@@ -6,15 +6,14 @@ import eggX from '../images/friedegg.png'
 const StyledButton = styled.div`
     background-color: transparent;
     background-size: contain;
-    height: 12em;
+    height: 10em;
     margin: 1em;
-    width: 12em;
+    width: 10em;
     position: relative;
     border-radius: 15%;
     border: none;
     `
 function Square(props) {
-    console.log(props)
     
     let egg;
     if(props.value){

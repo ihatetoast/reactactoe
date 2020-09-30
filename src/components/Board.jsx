@@ -37,22 +37,28 @@ class Board extends Component {
         }
         
     }
+    
     handleClick(idx){
         // copy squares arr
         const squaresCopy = this.state.squares.slice();
+        // copy history
+        const history = this.state.history;
         // check for winner or that the square has already been clicked:
-        if(utils.checkWinner(squaresCopy) || squaresCopy[idx]){
+        const isWinner = utils.checkWinner(squaresCopy);
+        const isFull = utils.checkBoard(squaresCopy);
+        if( isWinner || squaresCopy[idx] || isFull){
             return;
         }
         // set el of arr at the index to x or o
         squaresCopy[idx]= this.state.isXNext ? "X" : "O";
         this.setState({
             squares: squaresCopy,
-            isXNext: !this.state.isXNext
+            isXNext: !this.state.isXNext, 
+            history: history
         });
+        
     }
     renderSquare(idx){
-        console.log(this.state.squares[idx])
         let bgImg;
         if(this.state.squares[idx]){
              bgImg = this.state.isXNext === "X" ? "eggO" : "eggX";
@@ -68,10 +74,14 @@ class Board extends Component {
     render() {
      
         const winningPlayer = utils.checkWinner(this.state.squares);
+        const isFull = utils.checkBoard(this.state.squares);
         let status;
         if(winningPlayer){
             status = `Player ${winningPlayer} won!`
-        } else{
+        } else if(!winningPlayer && isFull){
+            status = "It's a draw."
+        }
+        else{
             status = `Player ${this.state.isXNext ? 'X' : 'O'}'s turn.`
         }
 
