@@ -6,9 +6,9 @@ import eggX from '../images/friedegg.png'
 const StyledButton = styled.div`
     background-color: transparent;
     background-size: contain;
-    height: 10em;
+    height: 8em;
     margin: 1em;
-    width: 10em;
+    width: 8em;
     position: relative;
     border-radius: 15%;
     border: none;

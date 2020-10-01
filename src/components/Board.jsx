@@ -9,7 +9,21 @@ const StyledStatus = styled.p`
     margin: 0.3em;
     font-size: 1.5em;
     letter-spacing: 3px;
+    display:inline-block;
+  
 `;
+const StyledButton = styled.a`
+    border: 1px solid #044fd9;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #044fd9;
+    padding: 0.2em;
+    border-radius: 5px;
+    &:hover{
+        background: #044fd9;
+        color: #d9c704;
+    }
+`
 const StyledBoard = styled.div`
     display:inline-flex;
     flex-direction:column;
@@ -37,7 +51,7 @@ class Board extends Component {
         }
         
     }
-    
+    storage = new Storage();
     handleClick(idx){
         // copy squares arr
         const squaresCopy = this.state.squares.slice();
@@ -57,6 +71,13 @@ class Board extends Component {
             history: history
         });
         
+    }
+    resetGame(){
+        this.setState({
+            squares: Array(9).fill(null),
+            isXNext: true, 
+            history: []
+        });
     }
     renderSquare(idx){
         let bgImg;
@@ -87,8 +108,8 @@ class Board extends Component {
 
         return (
             <div>
-                <div>
-                  <StyledStatus>{status}</StyledStatus>  
+                <div className="status-row">
+                  <StyledStatus>{status}</StyledStatus> <StyledButton onClick={()=>this.resetGame()}>Reset</StyledButton> 
                 </div>
                 <StyledBoard style={{
                     backgroundImage: 'url(' + require('./../images/tictactoeBoard_lg.svg') + ')',

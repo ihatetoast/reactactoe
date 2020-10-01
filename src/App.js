@@ -5,7 +5,7 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
-import LandingPage from './components/LandingPage'
+import ScoreBoard from './components/ScoreBoard'
 import Game from './components/Game'
 import gamelogoI from './images/gameboard-i.svg';
 import gamelogoA from './images/gameboard-a.svg';
@@ -21,7 +21,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <LandingPage />
+            <ScoreBoard />
           </Route>
           <Route exact path="/game">
             <Game />
