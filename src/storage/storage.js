@@ -1,16 +1,22 @@
 export class Storage {
-    constructor(storageName = "scoreboard", initVal = '[]') {
+    constructor(storageName = 'gameHistory', initialValue = '[]') {
       this.storageName = storageName
-        
-        if(!localStorage.getItem(storageName)){
-            localStorage.setItem(storageName, initVal)
-        }
+  
+          // Check if localStorage contains any data from previous games
+      if (!localStorage.getItem(storageName)) {
+              // If not, create new item for our Tic Tac Toe game
+        localStorage.setItem(storageName, initialValue)
+      }
     }
+    
     getData() {
-        return JSON.parse(localStorage.getItem(this.storageName));
-    }
+    return JSON.parse(localStorage.getItem(this.storageName))
 
-    update(data) {
-        localStorage.setItem(this.storageName, JSON.stringify(data))
     }
-}
+  
+    update(data) {
+
+      localStorage.setItem(this.initialValue, JSON.stringify(data))
+
+    }
+  }

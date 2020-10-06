@@ -99,8 +99,10 @@ class Board extends Component {
         let status;
         if(winningPlayer){
             status = `Player ${winningPlayer} won!`
+            this.storage.update([`${winningPlayer} won`]);
         } else if(!winningPlayer && isFull){
             status = "It's a draw."
+            this.storage.update([`Draw`]);
         }
         else{
             status = `Player ${this.state.isXNext ? 'X' : 'O'}'s turn.`
