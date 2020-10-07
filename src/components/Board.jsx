@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import Square from './Square'
 import * as utils from '../utils/helperFcns'
-import {Storage} from './../storage/storage'
+
 
 const StyledStatus = styled.p`
     margin: 0.3em;
@@ -39,8 +38,8 @@ const StyledRow = styled.div`
     display:flex;
     align-items: center;
     justify-content: center;
-    
 `;
+
 class Board extends Component {
     constructor(props){
         super();
@@ -51,7 +50,7 @@ class Board extends Component {
         }
         
     }
-    storage = new Storage();
+
     handleClick(idx){
         // copy squares arr
         const squaresCopy = this.state.squares.slice();
@@ -99,10 +98,8 @@ class Board extends Component {
         let status;
         if(winningPlayer){
             status = `Player ${winningPlayer} won!`
-            this.storage.update([`${winningPlayer} won`]);
         } else if(!winningPlayer && isFull){
             status = "It's a draw."
-            this.storage.update([`Draw`]);
         }
         else{
             status = `Player ${this.state.isXNext ? 'X' : 'O'}'s turn.`

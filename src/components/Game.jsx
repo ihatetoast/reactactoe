@@ -1,5 +1,4 @@
-import React, {Component, Fragment} from 'react'
-import { Link } from 'react-router-dom'
+import React, {Component} from 'react'
 // import {Storage} from './../storage/storage'
 import Board from './Board'
 
@@ -10,19 +9,12 @@ import Board from './Board'
 
 class Game extends Component {
  
-    // storage = new Storage();
+
     render(){
         return(
-            <Fragment>
-            <div>
-                {/* <Link to="/" className="toHome-link">Go back to scores and leaderboard</Link>*/}   
-                <Link to="/" className="board-link">Go back to scoreboard</Link>   
-            </div>
-            <div>
-                <Board />        
-            </div>
-                
-            </Fragment>
+
+            <Board />        
+
         )
     }
 }
