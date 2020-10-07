@@ -11,6 +11,11 @@ So here I am: a girl (very old one at that) standing before you and admitting th
 Tic Tac Toe or Naughts and Crosses or Whole Egg and Splats
 A basic tic tac toe game (can there be anything but a basic version of this?) but with O-ish and X-ish images instead of X and O. 
 
+## But what about
+Local storage? Not this time. Let's be honest, by the time I finished the game functionality, I wanted to move on and didn't see myself caring about who won when I was just playing by myself. 
+
+Different images? Now that's worth returning for, for me. Perhaps later let the player pick a theme: fried & whole egg, dogs & cats, fish & hook with worm ... Maybe.
+
 ![Tic tac toe board with eggs](./src/tictactoe.png)
 ## How
 * Create React App
