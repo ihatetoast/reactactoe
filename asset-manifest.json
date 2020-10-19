@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/ihatetoast/reactactoe/static/css/main.ce12ac2b.chunk.css",
-    "main.js": "/ihatetoast/reactactoe/static/js/main.fc043ce2.chunk.js",
-    "main.js.map": "/ihatetoast/reactactoe/static/js/main.fc043ce2.chunk.js.map",
-    "runtime-main.js": "/ihatetoast/reactactoe/static/js/runtime-main.f0e2ade8.js",
-    "runtime-main.js.map": "/ihatetoast/reactactoe/static/js/runtime-main.f0e2ade8.js.map",
-    "static/js/2.6d7c0404.chunk.js": "/ihatetoast/reactactoe/static/js/2.6d7c0404.chunk.js",
-    "static/js/2.6d7c0404.chunk.js.map": "/ihatetoast/reactactoe/static/js/2.6d7c0404.chunk.js.map",
-    "index.html": "/ihatetoast/reactactoe/index.html",
-    "precache-manifest.3d8dc57694cddb3d8c527ddc707b8cb2.js": "/ihatetoast/reactactoe/precache-manifest.3d8dc57694cddb3d8c527ddc707b8cb2.js",
-    "service-worker.js": "/ihatetoast/reactactoe/service-worker.js",
-    "static/css/main.ce12ac2b.chunk.css.map": "/ihatetoast/reactactoe/static/css/main.ce12ac2b.chunk.css.map",
-    "static/js/2.6d7c0404.chunk.js.LICENSE.txt": "/ihatetoast/reactactoe/static/js/2.6d7c0404.chunk.js.LICENSE.txt",
-    "static/media/egg.png": "/ihatetoast/reactactoe/static/media/egg.a7446f2c.png",
-    "static/media/friedegg.png": "/ihatetoast/reactactoe/static/media/friedegg.71050117.png",
-    "static/media/gameboard-a.svg": "/ihatetoast/reactactoe/static/media/gameboard-a.af9e876e.svg",
-    "static/media/gameboard-i.svg": "/ihatetoast/reactactoe/static/media/gameboard-i.f602537f.svg",
-    "static/media/gameboard-o.svg": "/ihatetoast/reactactoe/static/media/gameboard-o.0ca1de6b.svg",
-    "static/media/tictactoeBoard_lg.svg": "/ihatetoast/reactactoe/static/media/tictactoeBoard_lg.3c5ce6a6.svg"
+    "main.css": "/reactactoe/static/css/main.ce12ac2b.chunk.css",
+    "main.js": "/reactactoe/static/js/main.63a76693.chunk.js",
+    "main.js.map": "/reactactoe/static/js/main.63a76693.chunk.js.map",
+    "runtime-main.js": "/reactactoe/static/js/runtime-main.df69821f.js",
+    "runtime-main.js.map": "/reactactoe/static/js/runtime-main.df69821f.js.map",
+    "static/js/2.e1dd4452.chunk.js": "/reactactoe/static/js/2.e1dd4452.chunk.js",
+    "static/js/2.e1dd4452.chunk.js.map": "/reactactoe/static/js/2.e1dd4452.chunk.js.map",
+    "index.html": "/reactactoe/index.html",
+    "precache-manifest.2a9263bc8f4175824dbe523cb220d52d.js": "/reactactoe/precache-manifest.2a9263bc8f4175824dbe523cb220d52d.js",
+    "service-worker.js": "/reactactoe/service-worker.js",
+    "static/css/main.ce12ac2b.chunk.css.map": "/reactactoe/static/css/main.ce12ac2b.chunk.css.map",
+    "static/js/2.e1dd4452.chunk.js.LICENSE.txt": "/reactactoe/static/js/2.e1dd4452.chunk.js.LICENSE.txt",
+    "static/media/egg.png": "/reactactoe/static/media/egg.a7446f2c.png",
+    "static/media/friedegg.png": "/reactactoe/static/media/friedegg.71050117.png",
+    "static/media/gameboard-a.svg": "/reactactoe/static/media/gameboard-a.af9e876e.svg",
+    "static/media/gameboard-i.svg": "/reactactoe/static/media/gameboard-i.f602537f.svg",
+    "static/media/gameboard-o.svg": "/reactactoe/static/media/gameboard-o.0ca1de6b.svg",
+    "static/media/tictactoeBoard_lg.svg": "/reactactoe/static/media/tictactoeBoard_lg.3c5ce6a6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f0e2ade8.js",
-    "static/js/2.6d7c0404.chunk.js",
+    "static/js/runtime-main.df69821f.js",
+    "static/js/2.e1dd4452.chunk.js",
     "static/css/main.ce12ac2b.chunk.css",
-    "static/js/main.fc043ce2.chunk.js"
+    "static/js/main.63a76693.chunk.js"
   ]
 }
